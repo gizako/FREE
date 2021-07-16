@@ -222,6 +222,16 @@ else if (Config.WORKTYPE == 'public') {
 
 }));
 
+XTroid.addCMD({ pattern: 'master ?(.*)', fromMe: true, dontAddCMDList: true}, (async (message, match) => {
+
+if (match[1] === '') return await message.sendMessage(ll);
+
+var lasiyasimg = await axios.get(`https://docs-jojo.herokuapp.com/api/meme-gen?top=%20&bottom=${encodeURIComponent(match[1])}&img=https://telegra.ph/file/d1e340537eec9e29ae204.jpg/revision/latest/top-crop/width/450/height/500?cb=20190205115000`, { responseType: 'arraybuffer' })
+
+await message.sendMessage(Buffer.from(lasiyasimg.data), MessageType.image, { mimetype: Mimetype.jpg, caption: Config.CAPTION_KEY})
+
+}));
+
 XTroid.addCMD({pattern: 'mme ?(.*)', fromMe: false, dontAddCMDList: true}, (async (message, match) => {    
 
     if (message.reply_message === false) return await message.client.sendMessage(message.jid,PRN, MessageType.text);

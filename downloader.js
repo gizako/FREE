@@ -36,7 +36,7 @@ XTroid.addCMD({ pattern: 'ig ?(.*)', fromMe: false, desc: IG_DESC}, async (messa
         })}
 		 	 
 	if (msg === 'video') { await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.video, {
-          caption: "Made By lasi"
+          caption: "🇬 🇮 🇸 🇭 🇦 🇳   🇧 🇴 🇹"
         })}
 	
         

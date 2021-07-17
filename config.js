@@ -41,7 +41,7 @@ module.exports = {
     BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
-    MENUTEXT:"🇬 🇮 🇸 🇭 🇦 🇳   🇧 🇴 🇹",
+    MENUTEXT:"𝙂𝙞𝙨𝙝𝙖𝙣 𝘽𝙤𝙩",
     GIF_WEL: process.env.GIF_WEL === undefined ?'https://netfile2link.herokuapp.com/9738' : process.env.GIF_WEL,
     GIF_BYE: process.env.GIF_BYE === undefined ?'https://webfilesdanuma.herokuapp.com/stream/14' : process.env.GIF_BYE,
     CAPTION_KEY: process.env.CP === undefined ? '🇬 🇮 🇸 🇭 🇦 🇳   🇧 🇴 🇹' : process.env.CP,

@@ -1,5 +1,4 @@
 /* Copyright (C) 2020 Yusuf Usta.
-
 */
 
 const { Sequelize } = require('sequelize');
@@ -15,7 +14,7 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './Xproject.db' : proces
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: '4.0 Global',
+    VERSION: '4.3 Glob',
     CCRUN: "zeks",
     GG:"Error 101",
     CHANNEL: 'https://t.me/danumabots',
@@ -25,7 +24,7 @@ module.exports = {
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://telegra.ph/file/b11ff90ad6a02293fefaf.jpg' : process.env.GAN_IMAGE,
     BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
     LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
-    ALIVEIMG: process.env.ALIVEIMG === undefined ? 'https://telegra.ph/file/7160b1e64a63b106abba0.jpg' : process.env.ALIVEIMG,
+    ALIVEIMG: process.env.ALIVEIMG === undefined ? 'https://telegra.ph/file/a143b34753c8434058e87.jpg' : process.env.ALIVEIMG,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
@@ -42,11 +41,11 @@ module.exports = {
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
     MENUTEXT:"𝙂𝙞𝙨𝙝𝙖𝙣 𝘽𝙤𝙩",
-    GIF_WEL: process.env.GIF_WEL === undefined ?'https://netfile2link.herokuapp.com/9738' : process.env.GIF_WEL,
+    GIF_WEL: process.env.GIF_WEL === undefined ?'https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/GTYSdDW/welcome-scenery_w1su4ez-h__76bbedbfeb6556bb8ba305dc5d7de900__P360.mp4' : process.env.GIF_WEL,
     GIF_BYE: process.env.GIF_BYE === undefined ?'https://webfilesdanuma.herokuapp.com/stream/14' : process.env.GIF_BYE,
-    CAPTION_KEY: process.env.CP === undefined ? '🇬 🇮 🇸 🇭 🇦 🇳   🇧 🇴 🇹' : process.env.CP,
+    CAPTION_KEY: process.env.CP === undefined ?'⚜ X-Troid ⚜' : process.env.CP,
     LOGO_KEY: process.env.LOGOAPI === undefined ?'B6FlBogm1ELO1Z52WigX70G1TOe' : process.env.LOGOAPI,
-    ALIVETEXT: process.env.ALIVE_MESSAGE === undefined ?'🧧 X-Troid 🧧\nName: X-Troid\nYoutube : youtu.be/mDnJ7q3S3eY' : process.env.ALIVE_MESSAGE,
+    ALIVETEXT: process.env.ALIVENAME === undefined ?'😈 Xtroid 😈\n https://youtu.be/mDnJ7q3S3eY' : process.env.ALIVENAME,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
     BRANCH: 'master',
     HEROKU: {
@@ -55,7 +54,7 @@ module.exports = {
         APP_NAME: process.env.HEROKU_APP_NAME === undefined ? '' : process.env.HEROKU_APP_NAME
     },
     DATABASE_URL: DATABASE_URL,
-    CCN: "ikygans",
+    CCN: "ovl",
     DATABASE: DATABASE_URL === './Xproject.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
     RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? false : process.env.REMOVE_BG_API_KEY,
     NO_ONLINE: process.env.NO_ONLINE === undefined ? true : convertToBool(process.env.NO_ONLINE),
@@ -63,8 +62,7 @@ module.exports = {
     DEBUG: DEBUG,
     COFFEEHOUSE_API_KEY: process.env.COFFEEHOUSE_API_KEY === undefined ? false : process.env.COFFEEHOUSE_API_KEY,
     WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG",
-    ON: "hunter", 
-       SUPPORT: "94702102324-1616997271",
+    SUPPORT: "94702102324-1616997271",
     SUPPORT2:"94702102324-1619710622",
     SUPPORT3:"94702102324-1623132102",
     G1:"94758258917-1538284375",
@@ -79,8 +77,7 @@ module.exports = {
     G10:"94702102324-1623072431",
     NWS1:"94762234883-1616483925",
     NWS2:"94702102324-1621503960",
-    NWS3:"94702102324-1624633291"
+    NWS3:"94702102324-1624633291",
+    ON: "hunter"
 
 };
-
-

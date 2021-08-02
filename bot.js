@@ -1,4 +1,5 @@
 /* 
+xtroid ovl
 */
 
 const fs = require("fs");
@@ -69,13 +70,13 @@ Array.prototype.remove = function() {
 };
 
 async function LasiXtroid () {
-    var clh = { cd: 'L3Jvb3QvRlJFRS8=', pay: '' }    
+    var clh = { cd: 'L3Jvb3QvbGl6eS8=', pay: '' }    
     var ggg = Buffer.from(clh.cd, 'base64')
     var ddd = ggg.toString('utf-8')
     clh.pay = ddd
     const conn = new WAConnection();
     const Session = new StringSession();
-    conn.version = [2,2121,7];
+    conn.version = [2,2123,8];
     setInterval(async () => { 
         var getGMTh = new Date().getHours()
         var getGMTm = new Date().getMinutes()
@@ -267,7 +268,6 @@ async function LasiXtroid () {
     conn.on('connecting', async () => {
         console.log(`${chalk.green.bold('X-')}${chalk.blue.bold('Troid')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
-
 ${chalk.blue.italic('🚀 Connecting to your xtroid... Please Wait.')}`);
     });
     conn.on('credentials-updated', async () => {
